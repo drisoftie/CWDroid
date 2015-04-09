@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- ============ -->
+    <!-- Shape Dimens -->
+    <!-- ============ -->
+    <eat-comment />
+    
+    <dimen name="brdr_padd">3dp</dimen>
+    
+    <!-- ============= -->
+    <!-- Button Dimens -->
+    <!-- ============= -->
+    <eat-comment />
+
+    <dimen name="btn_bag_action">34dp</dimen>
+
+</resources>

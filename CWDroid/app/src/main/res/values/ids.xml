@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========== -->
+    <!-- Layout IDs -->
+    <!-- ========== -->
+    <eat-comment />
+
+    <item name="draw_main" type="id"/>
+
+    <item name="prog_travel_bags" type="id"/>
+    <item name="ll_travel_bags_content" type="id"/>
+    <item name="prog_bag" type="id"/>
+    <item name="ll_bag_content" type="id"/>
+    <item name="spin_bag_category" type="id"/>
+    <item name="prog_choose_items" type="id"/>
+    <item name="rl_choose_items_content" type="id"/>
+    <item name="pager_main" type="id"/>
+    <item name="pgrstrip_main" type="id"/>
+    <item name="rl_choose_item_new" type="id"/>
+    <item name="edt_choose_item_new_name" type="id"/>
+    <item name="spin_choose_item_category" type="id"/>
+    <item name="rl_choose_item_new_category_add" type="id"/>
+    <item name="edt_choose_item_new_category_name" type="id"/>
+    <item name="ll_litem_bag_item_btns" type="id"/>
+    <item name="slide_bags" type="id"/>
+
+    <!-- ============ -->
+    <!-- TextView IDs -->
+    <!-- ============ -->
+    <eat-comment />
+
+    <item name="txt_spitem_travel_category_name" type="id"/>
+    <item name="txt_spitem_travel_category_description" type="id"/>
+    <item name="txt_litem_travel_bags_name" type="id"/>
+    <item name="txt_litem_travel_bags_descr" type="id"/>
+    <item name="txt_litem_travel_bags_items_amount" type="id"/>
+    <item name="txt_head_travel_bags" type="id"/>
+    <item name="txt_head_bag" type="id"/>
+    <item name="txt_head_choose_items" type="id"/>
+    <item name="txt_list_empty" type="id"/>
+    <item name="txt_litem_bag_item_name" type="id"/>
+    <item name="txt_litem_bag_item_descr" type="id"/>
+    <item name="txt_litem_bag_item_category" type="id"/>
+    <item name="txt_litem_choose_item_name" type="id"/>
+    <item name="txt_litem_choose_item_descr" type="id"/>
+    <item name="txt_litem_choose_item_category" type="id"/>
+    <item name="txt_litem_bag_item_amount" type="id"/>
+    <item name="txt_litem_bag_item_packed" type="id"/>
+
+    <!-- ========== -->
+    <!-- Button IDs -->
+    <!-- ========== -->
+    <eat-comment />
+
+    <item name="btn_travel_bags_add" type="id"/>
+    <item name="btn_choose_item_new_add" type="id"/>
+    <item name="btn_choose_item_new_save" type="id"/>
+    <item name="btn_choose_item_new_category_save" type="id"/>
+    <item name="btn_choose_item_new_category_add" type="id"/>
+    <item name="btn_litem_bag_item_plus" type="id"/>
+    <item name="btn_litem_bag_item_minus" type="id"/>
+    <item name="btn_litem_bag_item_back_decr" type="id"/>
+    <item name="btn_litem_bag_item_pack" type="id"/>
+
+    <!-- ============= -->
+    <!-- ImageView IDs -->
+    <!-- ============= -->
+    <eat-comment />
+
+    <item name="img_litem_travel_bags_icon" type="id"/>
+    <item name="img_litem_bag_item_icon" type="id"/>
+    <item name="img_litem_bag_item_icon_overlay" type="id"/>
+    <item name="img_litem_bag_item_transfer" type="id"/>
+    <item name="img_litem_bag_item_transfer_bag" type="id"/>
+    <item name="img_litem_bag_item_transfer_list" type="id"/>
+    <item name="img_litem_choose_item_icon" type="id"/>
+    <item name="img_spitem_travel_category_preview_icon" type="id"/>
+    <item name="img_spitem_travel_category_icon" type="id"/>
+
+    <!-- ============ -->
+    <!-- ListView IDs -->
+    <!-- ============ -->
+    <eat-comment />
+
+
+    <item name="list_draw_main" type="id"/>
+
+    <item name="list_travel_bags" type="id"/>
+    <item name="list_bag" type="id"/>
+    <item name="list_choose_items" type="id"/>
+
+    <!-- ========= -->
+    <!-- Table IDs -->
+    <!-- ========= -->
+    <eat-comment />
+
+    <!-- ======== -->
+    <!-- Menu IDs -->
+    <!-- ======== -->
+    <eat-comment />
+
+    <item name="menu_about" type="id"/>
+    <item name="menu_item_context_edit" type="id"/>
+    <item name="menu_item_context_delete" type="id"/>
+    <item name="menu_travel_bags_add" type="id"/>
+    <item name="menu_travel_bags_context_delete" type="id"/>
+    <item name="menu_travel_bags_context_edit" type="id"/>
+    <item name="menu_choose_items_add_item" type="id"/>
+    <item name="menu_choose_items_add_category" type="id"/>
+    <item name="menu_filter_list" type="id"/>
+
+    <!-- ========== -->
+    <!-- Dialog IDs -->
+    <!-- ========== -->
+    <eat-comment />
+
+    <item name="edt_diag_name" type="id"/>
+    <item name="edt_diag_description" type="id"/>
+    <item name="img_diag_icon" type="id"/>
+    <item name="btn_diag_choose_icon" type="id"/>
+
+    <!-- ============ -->
+    <!-- Fragment IDs -->
+    <!-- ============ -->
+    <eat-comment />
+
+    <item name="frag_travel_list" type="id"/>
+    <item name="frag_travel_items" type="id"/>
+    <item name="frag_choose_items" type="id"/>
+
+</resources>

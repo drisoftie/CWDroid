@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================ -->
+    <!-- Color References -->
+    <!-- ================ -->
+    <eat-comment />
+
+    <!-- =============== -->
+    <!-- Icon References -->
+    <!-- =============== -->
+    <eat-comment />
+
+    <drawable name="ic_travel_bags_add">@drawable/ic_add</drawable>
+
+</resources>

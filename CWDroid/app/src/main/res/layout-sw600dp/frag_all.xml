@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="bottom"
+    sothree:umanoDragView="@id/frag_choose_items"
+    sothree:umanoPanelHeight="300dp"
+    sothree:umanoShadowHeight="4dp">
+
+    <android.support.v4.widget.SlidingPaneLayout
+        android:id="@id/slide_bags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <fragment
+            android:id="@id/frag_travel_list"
+            class="com.drisoftie.cwdroid.frag.comp.FragBag"
+            android:layout_width="350dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+            tools:layout="@layout/frag_bag"/>
+
+        <fragment
+            android:id="@id/frag_travel_items"
+            class="com.drisoftie.cwdroid.frag.comp.FragBag"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end"
+            tools:layout="@layout/frag_bag"/>
+    </android.support.v4.widget.SlidingPaneLayout>
+
+    <fragment
+        android:id="@id/frag_choose_items"
+        class="com.drisoftie.cwdroid.frag.comp.FragBag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        tools:layout="@layout/frag_bag"/>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

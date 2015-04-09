@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================= -->
+    <!-- Category Mappings -->
+    <!-- ================= -->
+    <eat-comment />
+
+    <array name="category_lists">
+        <item>@array/cat_rest</item>
+        <item>@array/cat_care_items</item>
+        <item>@array/cat_clothes</item>
+        <item>@array/cat_shoes</item>
+        <item>@array/cat_food</item>
+    </array>
+
+    <!-- ========== -->
+    <!-- Item Lists -->
+    <!-- ========== -->
+    <eat-comment />
+
+    <string-array name="cat_rest" translatable="false">
+        <item>Rest</item>
+        <item>Gegenstände ohne Kategorie</item>
+        <item>Gabel</item>
+        <item>Messer</item>
+        <item>Handtuch</item>
+        <item>Schirm</item>
+        <item>Gesellschaftsspiele</item>
+        <item>Armbanduhr</item>
+        <item>Schmuck</item>
+        <item>Portable Urlaubsgeldbörse</item>
+        <item>Bargeld, Cash</item>
+        <item>Kreditkarte</item>
+        <item>Tablet</item>
+        <item>Laptop</item>
+        <item>Handy</item>
+        <item>Decke</item>
+        <item>Nackenkissen</item>
+        <item>Taschentücher</item>
+        <item>Kissen</item>
+        <item>Bettwäsche</item>
+        <item>Küchentücher</item>
+        <item>Toilettenpapier</item>
+        <item>Sonnenbrille</item>
+        <item>Sonnenhut</item>
+        <item>Ball</item>
+        <item>Badmintonschläger</item>
+        <item>Sportgerät</item>
+        <item>Fahrrad</item>
+        <item>Handtasche</item>
+        <item>Rucksack</item>
+        <item>Spülmittel</item>
+        <item>Schwamm</item>
+        <item>Spültücher</item>
+        <item>Kopfhörer</item>
+        <item>Kamera</item>
+        <item>MP3-Player</item>
+        <item>Müllbeutel</item>
+        <item>Teebeutel</item>
+        <item>Kaffeefilter</item>
+        <item>Brille</item>
+        <item>Buch</item>
+        <item>Zeitschrift</item>
+        <item>Impfung</item>
+        <item>Impfpass</item>
+        <item>Krankenkassenkarte</item>
+        <item>Perso</item>
+        <item>Reisepass</item>
+        <item>Tickets</item>
+        <item>Hausschlüssel</item>
+        <item>Kontaktdaten d. Urlaubsortes, Hotels</item>
+        <item>Mobiles Aufladegerät</item>
+        <item>Kabel</item>
+        <item>USB-Kabel</item>
+        <item>Aufladekabel</item>
+    </string-array>
+    <string-array name="cat_care_items" translatable="false">
+        <item>Pflegeartikel</item>
+        <item>Alles für Körper und Geist</item>
+        <item>Haarpflegeartikel</item>
+        <item>Nagelfeile</item>
+        <item>Nagelschere</item>
+        <item>Seife</item>
+        <item>Shampoo</item>
+        <item>Duschgel</item>
+        <item>After Shave</item>
+        <item>Rasierer</item>
+        <item>Massageball</item>
+        <item>Massagezeug</item>
+        <item>Body Lotion</item>
+        <item>Handcreme</item>
+        <item>Lippenstift</item>
+        <item>Puder</item>
+        <item>Kajal</item>
+        <item>Lidschatten</item>
+        <item>Maskara</item>
+        <item>Schminke</item>
+        <item>Waschlappen</item>
+        <item>Kamm</item>
+        <item>Zahnseide</item>
+        <item>Zahnpasta</item>
+        <item>Zahnbürste</item>
+        <item>Zahnputzzeug</item>
+        <item>Fön</item>
+        <item>Pflaster</item>
+        <item>Deo</item>
+        <item>Parfum</item>
+        <item>Kondome</item>
+        <item>Pille</item>
+        <item>Massageöl</item>
+        <item>Fußcreme</item>
+        <item>Nagellack</item>
+        <item>Nagellackentferner</item>
+        <item>Binden</item>
+        <item>O.B.</item>
+        <item>Kopfschmerztabletten, Aspirin, Buscopan, Iberogast, Zitramon</item>
+        <item>Sonnencreme</item>
+        <item>Ohrenstäbchen</item>
+        <item>Oropax</item>
+        <item>Ohrstöpsel</item>
+        <item>Nasenspray</item>
+        <item>Arznei</item>
+        <item>Schaumfestiger</item>
+        <item>Gel</item>
+        <item>Rasierschaum</item>
+        <item>Bodymilk</item>
+        <item>Gesichtsmaske</item>
+        <item>Safra-Maske, Yves Rocher</item>
+        <item>Nivea-Creme, kleine</item>
+        <item>Augen-Makeup-Entferner</item>
+        <item>Gesichtswasser</item>
+        <item>Reinigungsmilch</item>
+        <item>Wattepads</item>
+        <item>Listerine</item>
+        <item>Urlaubsportionen</item>
+        <item>Lippenpflegestift</item>
+        <item>Trockenshampoo</item>
+        <item>Kosmetiktasche</item>
+        <item>Niveatasche</item>
+    </string-array>
+    <string-array name="cat_clothes" translatable="false">
+        <item>Kleidung</item>
+        <item>Etwas zum Anziehen, außer Schuhe</item>
+        <item>Regenponcho</item>
+        <item>Schlafanzughose</item>
+        <item>Stulpen</item>
+        <item>Mütze</item>
+        <item>Handschuhe</item>
+        <item>Schal</item>
+        <item>Jacke</item>
+        <item>Hose</item>
+        <item>BH</item>
+        <item>Unterhose</item>
+        <item>Socken</item>
+        <item>Schlafshirt</item>
+        <item>Haarspange</item>
+        <item>Hemd</item>
+        <item>T-Shirt</item>
+        <item>Unterhemd</item>
+        <item>Pulli</item>
+        <item>Pyjama</item>
+        <item>Jogginghose</item>
+        <item>Trägertop</item>
+        <item>Schlabberhose</item>
+        <item>Shorts</item>
+        <item>Bermudas</item>
+        <item>Bolero</item>
+        <item>Badehose</item>
+        <item>Bikini</item>
+        <item>Badezeug</item>
+        <item>Strumpfhose</item>
+        <item>Rock</item>
+        <item>Kleid</item>
+    </string-array>
+    <string-array name="cat_shoes" translatable="false">
+        <item>Schuhe</item>
+        <item>Alles für die Füße</item>
+        <item>Hausschuhe</item>
+        <item>Weiche Hausschuhsocken</item>
+        <item>Badeschlappen</item>
+        <item>Sandalen</item>
+        <item>Straßenschuhe</item>
+        <item>Regenschuhe</item>
+        <item>Stiefel</item>
+        <item>Gummistiefel</item>
+        <item>Wanderschuhe</item>
+    </string-array>
+    <string-array name="cat_food" translatable="false">
+        <item>Nahrung</item>
+        <item>Etwas zum Essen</item>
+        <item>Vesper</item>
+        <item>Wasser</item>
+        <item>Trinken</item>
+        <item>Saft</item>
+        <item>Kaffeepulver, Kaffee</item>
+        <item>Tee</item>
+        <item>Kaugummi</item>
+        <item>Hustenbonbons</item>
+    </string-array>
+
+</resources>

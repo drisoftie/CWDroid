@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="app_theme">@color/dark_blue</color>
+    <color name="app_theme_dark">@color/darker_blue</color>
+    <color name="app_accent">@color/dark_blue</color>
+    <color name="dark_blue">#FF016BB7</color>
+    <color name="darker_blue">#FF005BA7</color>
+    <color name="text_blue">@color/dark_blue</color>
+    <color name="bg_pager_title">@color/dark_blue</color>
+    <color name="table_light_grey">#EDEDED</color>
+    <color name="mid_grey">#FF888888</color>
+    <color name="blue">#FF019BE7</color>
+    <color name="green">#090</color>
+    <color name="green_transparent">#660f990f</color>
+    <color name="red">#900</color>
+
+</resources>
