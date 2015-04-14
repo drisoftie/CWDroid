@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        class="com.drisoftie.cwdroid.frag.comp.FragBag"/>
+        class="com.drisoftie.cwdroid.frag.FragNews"/>
 
     <View
         android:layout_width="4dp"
@@ -27,7 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        class="com.drisoftie.cwdroid.frag.comp.FragBag"/>
+        class="com.drisoftie.cwdroid.frag.FragNews"/>
 
     <View
         android:layout_width="4dp"
@@ -43,6 +43,6 @@
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        class="com.drisoftie.cwdroid.frag.comp.FragBag"/>
+        class="com.drisoftie.cwdroid.frag.FragNews"/>
 
 </LinearLayout>

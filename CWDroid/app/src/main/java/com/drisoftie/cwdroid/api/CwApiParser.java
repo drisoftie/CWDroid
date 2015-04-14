@@ -54,7 +54,7 @@ public class CwApiParser<T> {
         return builder;
     }
 
-    public <T> T parse() throws IOException {
+    public T parse() throws IOException {
 
         String xml = IOUtils.toString(new URL(builder.builder.toString()), CharEncoding.UTF_8);
 
@@ -70,7 +70,7 @@ public class CwApiParser<T> {
 
     public class Builder {
 
-        Uri.Builder builder;
+        private Uri.Builder builder;
 
         protected Builder() {
             prepare(CwApp.string(R.string.api_domain), CwApp.string(R.string.api_path));

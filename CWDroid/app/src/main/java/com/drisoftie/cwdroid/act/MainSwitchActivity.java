@@ -22,7 +22,7 @@ import android.support.v4.widget.SlidingPaneLayout;
 
 import com.drisoftie.cwdroid.CwApp;
 import com.drisoftie.cwdroid.R;
-import com.drisoftie.cwdroid.frag.comp.FragMainPaging;
+import com.drisoftie.cwdroid.frag.FragMainPaging;
 import com.drisoftie.frags.comp.FragManaged;
 import com.drisoftie.frags.comp.ManagedNotifyActivity;
 

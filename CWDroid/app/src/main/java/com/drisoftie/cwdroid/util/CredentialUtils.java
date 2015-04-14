@@ -36,16 +36,28 @@ import javax.crypto.spec.SecretKeySpec;
  */
 public class CredentialUtils {
 
+    private static final String MD5 = "MD5";
+    private static final String AES = "AES";
+
+    private static Cipher getDefaultCipher() {
+        Cipher cipher = null;
+        try {
+            cipher = Cipher.getInstance(AES);
+        } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
+            e.printStackTrace();
+        }
+        return cipher;
+    }
+
     private static SecretKey generateKey() throws NoSuchAlgorithmException {
         // Generate a 256-bit key
         final int outputKeyLength = 256;
 
         SecureRandom secureRandom = new SecureRandom();
         // Do *not* seed secureRandom! Automatically seeded from system entropy.
-        KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
+        KeyGenerator keyGenerator = KeyGenerator.getInstance(AES);
         keyGenerator.init(outputKeyLength, secureRandom);
-        SecretKey key = keyGenerator.generateKey();
-        return key;
+        return keyGenerator.generateKey();
     }
 
     public static byte[] generateKeyBytes() {
@@ -70,30 +82,39 @@ public class CredentialUtils {
         return result;
     }
 
-    private static byte[] encrypt(byte[] raw,
-                                  byte[] clear) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException,
-            BadPaddingException, IllegalBlockSizeException {
-        SecretKeySpec skeySpec = new SecretKeySpec(raw, "AES");
-        Cipher cipher = Cipher.getInstance("AES");
+    public static String deobfuscateFromBase64(byte[] key, String basePassword) {
+        String result = null;
+        try {
+            byte[] cleared = Base64.decode(basePassword, Base64.DEFAULT);
+            byte[] decrypted = decrypt(key, cleared);
+            result = Base64.encodeToString(decrypted, Base64.DEFAULT);
+        } catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException | BadPaddingException |
+                IllegalBlockSizeException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    private static byte[] encrypt(byte[] key, byte[] clear)
+            throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+        SecretKeySpec skeySpec = new SecretKeySpec(key, AES);
+        Cipher        cipher   = getDefaultCipher();
         cipher.init(Cipher.ENCRYPT_MODE, skeySpec);
         return cipher.doFinal(clear);
     }
 
-    private static byte[] decrypt(byte[] raw,
-                                  byte[] encrypted) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException,
-            BadPaddingException, IllegalBlockSizeException {
-        SecretKeySpec skeySpec = new SecretKeySpec(raw, "AES");
-        Cipher cipher = Cipher.getInstance("AES");
+    private static byte[] decrypt(byte[] key, byte[] encrypted)
+            throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+        SecretKeySpec skeySpec = new SecretKeySpec(key, AES);
+        Cipher        cipher   = getDefaultCipher();
         cipher.init(Cipher.DECRYPT_MODE, skeySpec);
         return cipher.doFinal(encrypted);
     }
 
-    public static final String md5(final String s) {
-        final String MD5 = "MD5";
+    public static String md5(final String s) {
         try {
             // Create MD5 Hash
-            MessageDigest digest = java.security.MessageDigest
-                    .getInstance(MD5);
+            MessageDigest digest = java.security.MessageDigest.getInstance(MD5);
             digest.update(s.getBytes());
             byte messageDigest[] = digest.digest();
 
@@ -101,8 +122,9 @@ public class CredentialUtils {
             StringBuilder hexString = new StringBuilder();
             for (byte aMessageDigest : messageDigest) {
                 String h = Integer.toHexString(0xFF & aMessageDigest);
-                while (h.length() < 2)
+                while (h.length() < 2) {
                     h = "0" + h;
+                }
                 hexString.append(h);
             }
             return hexString.toString();

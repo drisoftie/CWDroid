@@ -32,7 +32,7 @@ public class CwApi {
 
     private static String apiKey;
 
-    private static CwApiParser<XmlUser> userParser;
+    private static CwApiParser<XmlUser>  userParser;
     private static CwApiParser<XmlBlogs> blogsParser;
 
     /**
@@ -46,11 +46,11 @@ public class CwApi {
     }
 
     public static XmlRoot checkApiToken() {
-        XmlRoot result = null;
+        XmlRoot     result = null;
         CwApiParser parser = new CwApiParser<>(XmlRoot.class);
         try {
-            result = (XmlRoot) parser.build().setCommand(CwApiCommand.CHECK_API_TOKEN).addArgument(
-                    CwApiArgument.APITOKEN.getName(), CwApi.getApiKey()).finish().parse();
+            result = (XmlRoot) parser.build().setCommand(CwApiCommand.CHECK_API_TOKEN).addArgument(CwApiArgument.APITOKEN.getName(),
+                                                                                                   CwApi.getApiKey()).finish().parse();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -66,10 +66,9 @@ public class CwApi {
             password = CredentialUtils.md5(password);
         }
         try {
-            XmlUser root = (XmlUser) userParser.build().setCommand(CwApiCommand.AUTHENTICATE).addArgument(
-                    CwApiArgument.APITOKEN.getName(), CwApi.getApiKey()).addArgument(
-                    CwApiArgument.USERNAME.getName(), username).addArgument(
-                    CwApiArgument.PASSWORD.getName(), password).finish().parse();
+            XmlUser root = (XmlUser) userParser.build().setCommand(CwApiCommand.AUTHENTICATE).addArgument(CwApiArgument.APITOKEN.getName(),
+                                                                                                          CwApi.getApiKey()).addArgument(
+                    CwApiArgument.USERNAME.getName(), username).addArgument(CwApiArgument.PASSWORD.getName(), password).finish().parse();
             if (root != null && root.getUser() != null) {
                 result = root.getUser();
             }

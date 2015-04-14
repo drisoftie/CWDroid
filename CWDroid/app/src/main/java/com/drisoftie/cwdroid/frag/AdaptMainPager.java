@@ -13,7 +13,7 @@
  * reproducing, accessing or modifying without Sony prior written consent.
  *
  ****************************************************************************/
-package com.drisoftie.cwdroid.frag.comp;
+package com.drisoftie.cwdroid.frag;
 
 import android.support.v4.app.FragmentManager;
 
@@ -44,10 +44,10 @@ public class AdaptMainPager extends BaseAdaptFragPager {
         FragManaged f = null;
         switch (position) {
             case 0:
-                f = new FragBag();
+                f = new FragNews();
                 break;
             case 1:
-                f = new FragBag();
+                f = new FragNews();
                 break;
         }
         return f;
@@ -58,7 +58,7 @@ public class AdaptMainPager extends BaseAdaptFragPager {
         int title = -1;
         switch (position) {
             case 0:
-                title = R.string.page_travel_bags;
+                title = R.string.page_news;
                 break;
             case 1:
                 title = R.string.page_bag;

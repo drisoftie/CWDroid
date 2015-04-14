@@ -23,7 +23,7 @@
     <!-- =========== -->
     <eat-comment />
 
-    <string name="page_travel_bags">Kofferliste</string>
+    <string name="page_news">News</string>
     <string name="page_bag">Packen</string>
     <string name="page_choose_item">Auswahl</string>
 

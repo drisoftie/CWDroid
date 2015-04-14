@@ -13,7 +13,7 @@
  * reproducing, accessing or modifying without Sony prior written consent.
  *
  ****************************************************************************/
-package com.drisoftie.cwdroid.frag.comp;
+package com.drisoftie.cwdroid.frag;
 
 import android.support.v4.app.FragmentManager;
 
