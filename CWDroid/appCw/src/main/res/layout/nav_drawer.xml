@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@id/ll_nav_draw"
+              style="@style/DrawerStyle"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/DrawerUserSpace">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@id/img_nav_draw_login_user_profile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_mock"
+            app:riv_border_color="?attr/colorPrimary"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="32dip"
+            app:riv_mutate_background="true"/>
+
+        <ImageView
+            android:id="@id/img_nav_draw_logout_user_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_logout"
+            android:layout_below="@id/img_nav_draw_login_user_profile"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@id/txt_nav_draw_user_name"
+            style="@style/DrawerUsernameFont"
+            android:layout_below="@id/img_nav_draw_login_user_profile"
+            android:layout_toLeftOf="@id/img_nav_draw_logout_user_profile"
+            android:layout_toStartOf="@id/img_nav_draw_logout_user_profile"
+            android:hint="@string/hint_default_user"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/list_nav_draw_main"
+        android:choiceMode="singleChoice"
+        style="@style/DrawerListStyle"/>
+</LinearLayout>

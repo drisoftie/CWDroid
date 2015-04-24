@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright [2015] [Alexander Dridiger - drisoftie@gmail.com]
+  ~
+  ~      Licensed under the Apache License, Version 2.0 (the "License");
+  ~      you may not use this file except in compliance with the License.
+  ~      You may obtain a copy of the License at
+  ~
+  ~          http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~      Unless required by applicable law or agreed to in writing, software
+  ~      distributed under the License is distributed on an "AS IS" BASIS,
+  ~      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~      See the License for the specific language governing permissions and
+  ~      limitations under the License.
+  -->
+
+<resources>
+
+    <!-- ============== -->
+    <!-- DB Log Strings -->
+    <!-- ============== -->
+    <eat-comment />
+
+    <string name="log_ormlite" translatable="false">CWDroid OrmLite</string>
+    <string name="log_ormlite_creating" translatable="false">Creating %1$s entity</string>
+
+    <plurals name="log_ormlite_number_of_rows_created">
+        <item quantity="one">%1$d row created.</item>
+        <item quantity="other">%1%d rows created.</item>
+    </plurals>
+
+    <string name="log_ormlite_updating" translatable="false">Updating %1$s entity</string>
+    <string name="log_ormlite_updated" translatable="false">%1$d rows updated</string>
+    <string name="log_ormlite_refreshing" translatable="false">Refreshing %1$s entity</string>
+    <string name="log_ormlite_refreshed" translatable="false">%1$s refreshed</string>
+    <string name="log_ormlite_creating_updating" translatable="false">Creating or updating %1$s entity</string>
+    <string name="log_ormlite_deleting" translatable="false">Deleting %1$s entity</string>
+    <string name="log_ormlite_deleted" translatable="false">%1$s deleted</string>
+    <string name="log_ormlite_no_create_update" translatable="false">Nothing to create or update</string>
+
+    <plurals name="log_ormlite_number_of_rows_deleted">
+        <item quantity="one">%1$d row deleted.</item>
+        <item quantity="other">%1%d rows deleted.</item>
+    </plurals>
+
+</resources>

@@ -14,21 +14,16 @@
  *      limitations under the License.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package com.drisoftie.cwdroid;
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.2'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
-        classpath 'com.github.dcendents:android-maven-plugin:1.2'
-    }
-}
+import android.app.Application;
+import android.test.ApplicationTestCase;
 
-allprojects {
-    repositories {
-        jcenter()
+/**
+ * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
+ */
+public class ApplicationTest extends ApplicationTestCase<Application> {
+    public ApplicationTest() {
+        super(Application.class);
     }
 }

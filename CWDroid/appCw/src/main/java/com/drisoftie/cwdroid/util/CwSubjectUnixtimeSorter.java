@@ -14,21 +14,21 @@
  *      limitations under the License.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package com.drisoftie.cwdroid.util;
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.2'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
-        classpath 'com.github.dcendents:android-maven-plugin:1.2'
-    }
-}
+import com.drisoftie.cwdroid.domain.CwSubject;
 
-allprojects {
-    repositories {
-        jcenter()
+import java.util.Comparator;
+
+/**
+ * Compares two {@link CwSubject} entities by their subjectId.
+ *
+ * @author Alexander Dridiger
+ */
+public class CwSubjectUnixtimeSorter implements Comparator<CwSubject> {
+
+    @Override
+    public int compare(CwSubject sub1, CwSubject sub2) {
+        return sub1.getUnixtime() - sub2.getUnixtime();
     }
 }

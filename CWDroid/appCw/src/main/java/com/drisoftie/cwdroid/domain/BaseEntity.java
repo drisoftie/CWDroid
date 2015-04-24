@@ -13,22 +13,28 @@
  *      See the License for the specific language governing permissions and
  *      limitations under the License.
  */
+package com.drisoftie.cwdroid.domain;
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+import com.j256.ormlite.field.DatabaseField;
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.2'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
-        classpath 'com.github.dcendents:android-maven-plugin:1.2'
-    }
-}
 
-allprojects {
-    repositories {
-        jcenter()
+/**
+ * Basic persistance class providing an ID for the database. Used as parent for all other entities. <br>
+ * Provides means to access the database in easy ways.
+ * 
+ * @author Alexander Dridiger
+ */
+public abstract class BaseEntity {
+
+    @DatabaseField(generatedId = true)
+    private Integer id;
+
+    /**
+     * Get generated database id.
+     *
+     * @return db id
+     */
+    public Integer getId() {
+        return id;
     }
 }

@@ -14,21 +14,25 @@
  *      limitations under the License.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package com.drisoftie.cwdroid.api;
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.2'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
-        classpath 'com.github.dcendents:android-maven-plugin:1.2'
-    }
-}
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
-allprojects {
-    repositories {
-        jcenter()
+/**
+ * @author Alexander Dridiger
+ */
+@Root(name = "root", strict = false)
+public class XmlUser extends XmlRoot {
+
+    @Element(name = "item", required = false)
+    private AuthenticatedUser user;
+
+    public AuthenticatedUser getUser() {
+        return user;
+    }
+
+    public void setUser(AuthenticatedUser user) {
+        this.user = user;
     }
 }

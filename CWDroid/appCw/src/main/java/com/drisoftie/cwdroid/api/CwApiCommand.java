@@ -14,21 +14,36 @@
  *      limitations under the License.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package com.drisoftie.cwdroid.api;
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.2'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
-        classpath 'com.github.dcendents:android-maven-plugin:1.2'
-    }
-}
+/**
+ * @author Alexander Dridiger
+ */
+public enum CwApiCommand {
 
-allprojects {
-    repositories {
-        jcenter()
+    CHECK_API_TOKEN("checkapitoken"),
+
+    AUTHENTICATE("authenticate"),
+
+    GET_BLOGS_LIST("getblogslist"),
+
+    GET_BLOGS("getblogs"),
+
+    GET_COMMENTS("getcomments"),
+
+    GET_MESSAGES("getmessages"),
+
+    GET_NEWS_LIST("getnewslist"),
+
+    GET_NEWS("getnews");
+
+    private final String name;
+
+    private CwApiCommand(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }

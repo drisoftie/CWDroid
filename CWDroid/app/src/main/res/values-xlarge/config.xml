@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!-- Indicates a big or a small screen -->
-    <bool name="isScreenBig">true</bool>
-
-</resources>

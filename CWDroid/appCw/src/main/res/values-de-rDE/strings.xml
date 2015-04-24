@@ -1,0 +1,178 @@
+<!--
+  ~ Copyright [2015] [Alexander Dridiger - drisoftie@gmail.com]
+  ~
+  ~      Licensed under the Apache License, Version 2.0 (the "License");
+  ~      you may not use this file except in compliance with the License.
+  ~      You may obtain a copy of the License at
+  ~
+  ~          http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~      Unless required by applicable law or agreed to in writing, software
+  ~      distributed under the License is distributed on an "AS IS" BASIS,
+  ~      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~      See the License for the specific language governing permissions and
+  ~      limitations under the License.
+  -->
+
+<resources>
+
+    <!-- =============== -->
+    <!-- General Strings -->
+    <!-- =============== -->
+    <eat-comment/>
+
+    <string name="icon">Icon</string>
+    <string name="title_travel_bags">Alle gespeicherten Kofferlisten:</string>
+    <string name="title_choose_items">Ich packe in meinen Koffer:</string>
+    <string name="title_bag">Gepackter Koffer:</string>
+    <string name="save">Speichern</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="loading_image">Lade Bild</string>
+    <string name="category_all">Alles</string>
+    <string name="category_descr_all">Alle Gegenstände</string>
+
+    <!-- =========== -->
+    <!-- Page Titles -->
+    <!-- =========== -->
+    <eat-comment/>
+
+    <string name="page_news">News</string>
+    <string name="page_news_sony">Sony-News</string>
+    <string name="page_news_ms">MS-News</string>
+    <string name="page_news_nin">Nintendo-News</string>
+    <string name="page_blogs">Blogs</string>
+    <string name="page_blogs_news">News-Blogs</string>
+
+    <!-- =========== -->
+    <!-- Menu Titles -->
+    <!-- =========== -->
+    <eat-comment/>
+
+    <string name="menu_nav_logout">Ausloggen</string>
+    <string name="menu_nav_news">News</string>
+    <string name="menu_nav_blogs">Blogs</string>
+    <string name="menu_nav_msgs">Nachrichten</string>
+    <string name="menu_nav_board">Forum</string>
+    <string name="menu_nav_shoutbox">Shoutbox</string>
+    <string name="menu_nav_settings">Nachrichten</string>
+    <string name="menu_nav_about">Über</string>
+
+    <string name="menu_context_item_edit">Gegenstand bearbeiten</string>
+    <string name="menu_context_item_delete">Gegenstand löschen</string>
+    <string name="menu_choose_item_add_item">Gegenstand hinzufügen</string>
+    <string name="menu_choose_item_add_category">Kategorie hinzufügen</string>
+    <string name="menu_travel_bags_add">Koffer</string>
+    <string name="menu_context_travel_bags_delete">Koffer löschen</string>
+    <string name="menu_context_travel_bags_edit">Koffer bearbeiten</string>
+
+    <plurals name="menu_context_title_chosen_amount">
+        <item quantity="one">%1$d ausgewählt</item>
+        <item quantity="other">%1$d ausgewählt</item>
+    </plurals>
+    <plurals name="menu_context_sub_title_chosen_amount">
+        <item quantity="one">Aktion wählen &#x2192;</item>
+        <item quantity="other">Aktion wählen &#x2192;</item>
+    </plurals>
+
+    <!-- ================================= -->
+    <!-- Application Configuration Strings -->
+    <!-- ================================= -->
+    <eat-comment/>
+
+    <!-- ============== -->
+    <!-- Button Strings -->
+    <!-- ============== -->
+    <eat-comment/>
+
+    <string name="btn_travel_bags_add">Kofferliste hinzufügen</string>
+    <string name="btn_choose_item_add">Hinzufügen</string>
+
+    <!-- ================ -->
+    <!-- TextView Strings -->
+    <!-- ================ -->
+    <eat-comment/>
+
+    <string name="txt_list_empty">Hier ziehen zum Aktualisieren.</string>
+
+    <!-- ============== -->
+    <!-- Dialog Strings -->
+    <!-- ============== -->
+    <eat-comment/>
+
+    <string name="diag_login">Einloggen</string>
+
+    <string name="diag_travel_bags_add">Koffer hinzufügen</string>
+    <string name="diag_travel_bags_edit">Koffer bearbeiten</string>
+
+    <plurals name="diag_travel_bags_remove_ask">
+        <item quantity="one">Koffer löschen?</item>
+        <item quantity="other">%1$d Koffer löschen?</item>
+    </plurals>
+
+    <string name="diag_item_add">Gegenstand hinzufügen</string>
+    <string name="diag_item_edit">Gegenstand bearbeiten</string>
+
+    <plurals name="diag_item_remove_ask">
+        <item quantity="one">Gegenstand löschen?</item>
+        <item quantity="other">%1$d Gegenstände löschen?</item>
+    </plurals>
+
+    <string name="diag_category_add">Kategorie hinzufügen</string>
+    <string name="diag_category_edit">Kategorie bearbeiten</string>
+    <string name="diag_choose_icon">Bild auswählen</string>
+
+    <!-- ================ -->
+    <!-- ListView Strings -->
+    <!-- ================ -->
+    <eat-comment/>
+
+    <string name="list_bag_not_selected">Keine Kofferliste ausgewählt.</string>
+    <string name="list_bag_empty">Koffer ist leer.</string>
+
+    <!-- ============= -->
+    <!-- Toast Strings -->
+    <!-- ============= -->
+    <eat-comment/>
+
+    <string name="toast_login_failed">Login fehlgeschlagen.</string>
+    <string name="toast_login_failed_extra">Login fehlgeschlagen.. Internetverbindung prüfen..</string>
+    <string name="toast_login_banned">Benutzer wurde gebannt.</string>
+    <string name="toast_logout">Benutzer ausgeloggt.</string>
+
+    <!-- ============ -->
+    <!-- Hint Strings -->
+    <!-- ============ -->
+    <eat-comment/>
+
+    <string name="hint_default_user">Standardbenutzer</string>
+    <string name="hint_password">Passwort</string>
+    <string name="hint_username">Benutzername</string>
+
+    <string name="hint_name">Name</string>
+    <string name="hint_description">Beschreibung</string>
+    <string name="hint_travel_bags_name">Name der Liste</string>
+    <string name="hint_choose_item_new_name">Name des Gegenstands</string>
+    <string name="hint_choose_item_new_category_name">Name der Kategorie</string>
+
+    <!-- ==================== -->
+    <!-- Content Descriptions -->
+    <!-- ==================== -->
+    <eat-comment/>
+
+    <string name="cd_aar_app_icon">@string/icon</string>
+    <string name="cd_save">Speichern</string>
+    <string name="cd_add">Hinzufügen</string>
+    <string name="cd_bag_action">Anzahl ändern</string>
+
+    <!-- ============= -->
+    <!-- Error Strings -->
+    <!-- ============= -->
+    <eat-comment/>
+
+    <string name="err_no_name">Kein Name angegeben!</string>
+    <string name="err_no_password">Kein Passwort angegeben!</string>
+
+</resources>

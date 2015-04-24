@@ -1,0 +1,63 @@
+<!--
+  ~ Copyright [2015] [Alexander Dridiger - drisoftie@gmail.com]
+  ~
+  ~      Licensed under the Apache License, Version 2.0 (the "License");
+  ~      you may not use this file except in compliance with the License.
+  ~      You may obtain a copy of the License at
+  ~
+  ~          http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~      Unless required by applicable law or agreed to in writing, software
+  ~      distributed under the License is distributed on an "AS IS" BASIS,
+  ~      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~      See the License for the specific language governing permissions and
+  ~      limitations under the License.
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme, dependent on API level. This theme is replaced by AppBaseTheme from res/values-vXX/styles.xml on newer devices. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Theme customizations available in newer API levels can go in res/values-vXX/styles.xml, while customizations related to backward-compatibility can go here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:colorPrimary">@color/app_theme</item>
+        <item name="android:colorPrimaryDark">@color/app_theme_dark</item>
+        <item name="android:colorAccent">@color/app_accent</item>
+        <item name="android:navigationBarColor">@color/app_theme</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <!-- compat -->
+        <item name="colorPrimary">@color/app_theme</item>
+        <item name="colorPrimaryDark">@color/app_theme_dark</item>
+        <item name="colorAccent">@color/app_accent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerUsernameFont" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="DrawerListItemFont" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">32dip</item>
+    </style>
+
+</resources>

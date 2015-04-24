@@ -14,21 +14,30 @@
  *      limitations under the License.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package com.drisoftie.cwdroid.api;
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.2'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
-        classpath 'com.github.dcendents:android-maven-plugin:1.2'
-    }
-}
+import com.drisoftie.cwdroid.domain.CwBlog;
+import com.drisoftie.cwdroid.domain.CwNews;
 
-allprojects {
-    repositories {
-        jcenter()
+import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Root;
+
+import java.util.List;
+
+/**
+ * @author Alexander Dridiger
+ */
+@Root(name = "root", strict = false)
+public class XmlBlogs extends XmlRoot {
+
+    @ElementList(inline = true, required = false)
+    private List<CwBlog> blogs;
+
+    public List<CwBlog> getBlogs() {
+        return blogs;
+    }
+
+    public void setBlogs(List<CwBlog> news) {
+        this.blogs = blogs;
     }
 }
