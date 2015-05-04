@@ -18,6 +18,7 @@ package com.drisoftie.cwdroid.cntrl;
 import com.drisoftie.cwdroid.domain.BaseEntity;
 import com.drisoftie.cwdroid.domain.CwBlog;
 import com.drisoftie.cwdroid.domain.CwMessage;
+import com.drisoftie.cwdroid.domain.CwNavItem;
 import com.drisoftie.cwdroid.domain.CwNews;
 import com.drisoftie.cwdroid.domain.CwUser;
 
@@ -37,6 +38,7 @@ public class DomainHolder {
     private BaseDomainHolder<CwMessage> msgsHolder  = new BaseDomainHolder<>();
 
     private MutablePair<CwUser, Boolean> loggedInUser = new MutablePair<>(null, false);
+    private CwNavItem selectedNavigation;
 
     @SuppressWarnings("unchecked")
     public <T extends BaseEntity> List<T> getEntities(Class<T> clazz) {
@@ -117,5 +119,13 @@ public class DomainHolder {
 
     public void setLoggedIn(boolean loggedIn) {
         loggedInUser.setRight(loggedIn);
+    }
+
+    public CwNavItem getSelectedNavigation() {
+        return selectedNavigation;
+    }
+
+    public void setSelectedNavigation(CwNavItem selectedNavigation) {
+        this.selectedNavigation = selectedNavigation;
     }
 }

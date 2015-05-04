@@ -60,16 +60,16 @@ public class FragNews extends FragPage {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View result = inflater.inflate(R.layout.frag_news, container, false);
         listNews = (ListView) result.findViewById(R.id.list_news);
-        listAdapNews = new AdaptNews(getActivity(), R.id.txt_litem_nav_draw_item_name, new ArrayList<CwNews>());
+        listAdapNews = new AdaptNews(getActivity(), R.id.txt_litem_news_title, new ArrayList<CwNews>());
         listNews.setAdapter(listAdapNews);
 
-        listNews.setEmptyView(result.findViewById(R.id.swipe_refresh_list_empty));
+        listNews.setEmptyView(result.findViewById(R.id.swipe_refresh_list_empty_news));
 
-        swipeList = (SwipeRefreshLayout) result.findViewById(R.id.swipe_refresh);
+        swipeList = (SwipeRefreshLayout) result.findViewById(R.id.swipe_refresh_news);
         swipeList.setColorSchemeResources(android.R.color.holo_blue_bright, android.R.color.holo_green_light,
                                           android.R.color.holo_orange_light, android.R.color.holo_red_light);
 
-        swipeListEmpty = (SwipeRefreshLayout) result.findViewById(R.id.swipe_refresh_list_empty);
+        swipeListEmpty = (SwipeRefreshLayout) result.findViewById(R.id.swipe_refresh_list_empty_news);
         swipeListEmpty.setColorSchemeResources(android.R.color.holo_blue_bright, android.R.color.holo_green_light,
                                                android.R.color.holo_orange_light, android.R.color.holo_red_light);
         return result;
@@ -101,7 +101,7 @@ public class FragNews extends FragPage {
                     @Override
                     public List<CwNews> onActionDoWork(String methodName, Object[] methodArgs, Void tag1, Void tag2,
                                                        Object[] additionalTags) {
-                        List<CwNews> news  = new ArrayList<CwNews>();
+                        List<CwNews> news  = new ArrayList<>();
                         int          count = 10;
                         while (news.size() < 10) {
                             count += 10;

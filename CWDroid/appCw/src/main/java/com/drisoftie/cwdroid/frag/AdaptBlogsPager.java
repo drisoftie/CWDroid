@@ -24,7 +24,7 @@ import com.drisoftie.frags.comp.FragManaged;
 
 
 /**
- * A {@link BaseAdaptFragPager} for the {@link FragMainPaging}.
+ * A {@link BaseAdaptFragPager} for the {@link FragPagerNews}.
  *
  * @author Alexander Dridiger
  */

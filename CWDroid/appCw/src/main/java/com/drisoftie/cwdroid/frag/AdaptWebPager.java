@@ -15,6 +15,7 @@
  */
 package com.drisoftie.cwdroid.frag;
 
+import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 
 import com.drisoftie.cwdroid.CwApp;
@@ -28,32 +29,31 @@ import com.drisoftie.frags.comp.FragManaged;
  *
  * @author Alexander Dridiger
  */
-public class AdaptNewsPager extends BaseAdaptFragPager {
+public class AdaptWebPager extends BaseAdaptFragPager {
 
-    public AdaptNewsPager(FragmentManager fm) {
+    public AdaptWebPager(FragmentManager fm) {
         super(fm);
     }
 
     @Override
     public int getInitFragPageCount() {
-        return 4;
+        return 2;
     }
 
     @Override
     public FragManaged initFragment(int position) {
-        FragManaged f = null;
+        FragManaged f    = null;
+        Bundle      args = new Bundle();
         switch (position) {
             case 0:
-                f = new FragNews();
+                args.putString(FragBoard.class.getName(), CwApp.inst().getString(R.string.cw_messageboard_mobile_url));
+                f = new FragBoard();
+                f.setArguments(args);
                 break;
             case 1:
-                f = new FragNews();
-                break;
-            case 2:
-                f = new FragNews();
-                break;
-            case 3:
-                f = new FragNews();
+                args.putString(FragShoutbox.class.getName(), CwApp.inst().getString(R.string.cw_shoutbox));
+                f = new FragShoutbox();
+                f.setArguments(args);
                 break;
         }
         return f;
@@ -64,16 +64,10 @@ public class AdaptNewsPager extends BaseAdaptFragPager {
         int title = -1;
         switch (position) {
             case 0:
-                title = R.string.page_news;
+                title = R.string.page_board;
                 break;
             case 1:
-                title = R.string.page_news_sony;
-                break;
-            case 2:
-                title = R.string.page_news_ms;
-                break;
-            case 3:
-                title = R.string.page_news_nin;
+                title = R.string.page_shoutbox;
                 break;
         }
         return CwApp.inst().getString(title);

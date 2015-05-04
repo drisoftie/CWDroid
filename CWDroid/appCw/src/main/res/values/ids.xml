@@ -24,12 +24,21 @@
 
     <item name="draw_main" type="id"/>
     <item name="draw_recv_menu" type="id"/>
+    <item name="pager_main" type="id"/>
     <item name="toolbar" type="id"/>
+    <item name="frag_space" type="id"/>
     <item name="ll_nav_draw" type="id"/>
     <item name="recyc_nav_draw_main" type="id"/>
-    <item name="prog_list_empty" type="id"/>
-    <item name="swipe_refresh" type="id"/>
-    <item name="swipe_refresh_list_empty" type="id"/>
+    <item name="prog_list_empty_news" type="id"/>
+    <item name="prog_list_empty_blogs" type="id"/>
+    <item name="prog_nav_draw_login" type="id"/>
+    <item name="swipe_refresh_news" type="id"/>
+    <item name="swipe_refresh_blogs" type="id"/>
+    <item name="swipe_refresh_board" type="id"/>
+    <item name="swipe_refresh_shoutbox" type="id"/>
+    <item name="swipe_refresh_list_empty_news" type="id"/>
+    <item name="swipe_refresh_list_empty_blogs" type="id"/>
+    <item name="rate_litem_blog" type="id"/>
 
     <item name="ll_travel_bags_content" type="id"/>
     <item name="prog_bag" type="id"/>
@@ -37,7 +46,6 @@
     <item name="spin_bag_category" type="id"/>
     <item name="prog_choose_items" type="id"/>
     <item name="rl_choose_items_content" type="id"/>
-    <item name="pager_main" type="id"/>
     <item name="pgrstrip_main" type="id"/>
     <item name="rl_choose_item_new" type="id"/>
     <item name="edt_choose_item_new_name" type="id"/>
@@ -60,7 +68,13 @@
     <item name="txt_litem_news_date" type="id"/>
     <item name="txt_litem_news_comments_amount" type="id"/>
     <item name="txt_litem_news_author" type="id"/>
-    <item name="txt_list_empty" type="id"/>
+    <item name="txt_litem_blog_title" type="id"/>
+    <item name="txt_litem_blog_descr" type="id"/>
+    <item name="txt_litem_blog_date" type="id"/>
+    <item name="txt_litem_blog_comments_amount" type="id"/>
+    <item name="txt_litem_blog_author" type="id"/>
+    <item name="txt_list_empty_news" type="id"/>
+    <item name="txt_list_empty_blogs" type="id"/>
 
     <item name="txt_spitem_travel_category_name" type="id"/>
     <item name="txt_spitem_travel_category_description" type="id"/>
@@ -71,6 +85,9 @@
     <!-- Button IDs -->
     <!-- ========== -->
     <eat-comment/>
+
+    <item name="img_btn_nav_draw_logout_user_profile" type="id"/>
+    <item name="img_btn_nav_draw_login_user_profile" type="id"/>
 
     <item name="btn_travel_bags_add" type="id"/>
     <item name="btn_choose_item_new_add" type="id"/>
@@ -88,10 +105,11 @@
     <eat-comment/>
 
     <item name="img_nav_draw_login_user_profile" type="id"/>
-    <item name="img_nav_draw_logout_user_profile" type="id"/>
     <item name="img_litem_nav_draw_item_icon" type="id"/>
     <item name="img_litem_news_category" type="id"/>
     <item name="img_litem_news_comments" type="id"/>
+    <item name="img_litem_blog_user_icon" type="id"/>
+    <item name="img_litem_blogs_comments" type="id"/>
 
 
     <item name="img_litem_bag_item_icon" type="id"/>
@@ -111,6 +129,7 @@
 
     <item name="list_nav_draw_main" type="id"/>
     <item name="list_news" type="id"/>
+    <item name="list_blogs" type="id"/>
 
     <item name="list_travel_bags" type="id"/>
     <item name="list_choose_items" type="id"/>
@@ -120,12 +139,22 @@
     <!-- ========= -->
     <eat-comment/>
 
+    <!-- =========== -->
+    <!-- WebView IDs -->
+    <!-- =========== -->
+    <eat-comment/>
+
+    <item name="web_single" type="id"/>
+    <item name="web_board" type="id"/>
+    <item name="web_shoutbox" type="id"/>
+
     <!-- ======== -->
     <!-- Menu IDs -->
     <!-- ======== -->
     <eat-comment/>
 
     <item name="menu_logout" type="id"/>
+    <item name="menu_refresh" type="id"/>
 
     <item name="menu_about" type="id"/>
     <item name="menu_item_context_edit" type="id"/>

@@ -17,6 +17,13 @@
 
 <resources>
 
+    <!-- ================= -->
+    <!-- Various Constants -->
+    <!-- ================= -->
+    <eat-comment />
+
+    <string name="const_nav_draw_opened" translatable="false">NAV_DRAW_OPENED</string>
+
     <!-- ================ -->
     <!-- Intent Constants -->
     <!-- ================ -->

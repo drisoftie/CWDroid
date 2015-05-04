@@ -14,15 +14,27 @@
   ~      limitations under the License.
   -->
 
-
-<android.support.v4.view.ViewPager
+<android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/pager_main"
+    android:id="@id/draw_main"
+    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v4.view.PagerTabStrip
-        android:id="@id/pgrstrip_main"
-        style="@style/PagerStripStyle"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</android.support.v4.view.ViewPager>
+        <include layout="@layout/toolbar"/>
+
+        <FrameLayout
+            android:id="@id/frag_space"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/nav_drawer"/>
+
+</android.support.v4.widget.DrawerLayout>

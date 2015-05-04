@@ -64,8 +64,9 @@ public class AdaptNews extends ArrayAdapter<CwNews> {
         holder.category.setText(news.getCategory());
         holder.title.setText(news.getTitle());
         holder.descr.setText(news.getDescription());
-        holder.date.setText(DateUtils.getRelativeTimeSpanString(news.getUnixtime() * 1000L, System.currentTimeMillis(),
-                                                                DateUtils.DAY_IN_MILLIS));
+//        holder.date.setText(DateUtils.getRelativeTimeSpanString(news.getUnixtime() * 1000L, System.currentTimeMillis(),
+//                                                                DateUtils.DAY_IN_MILLIS));
+        holder.date.setText(DateUtils.getRelativeTimeSpanString(news.getUnixtime() * 1000L));
         holder.cmtAmount.setText(String.valueOf(news.getCommentsAmount()));
         holder.author.setText(news.getAuthor());
 

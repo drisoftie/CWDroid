@@ -35,7 +35,7 @@
     <string name="cw_url_slash" translatable="false">http://www.consolewars.de/</string>
     <string name="cw_usercenter" translatable="false">http://www.%1$s.consolewars.de/settings/?page=%2$s</string>
     <string name="cw_usercenter_personal" translatable="false">personal</string>
-    <string name="cw_shoutbox" translatable="false">http://www.consolewars.de/chat</string>
+    <string name="cw_shoutbox" translatable="false">http://www.consolewars.de/shoutbox.php</string>
 
     <string name="cw_board_prefix" translatable="false">consolewars.de/messageboard/</string>
     <string name="cw_board_standard_style_suffix" translatable="false">styleid=-1</string>
@@ -66,26 +66,16 @@
 	<string name="general_picture" translatable="false">
 		http://www.consolewars.de/gen/fetchpics.php?aidx=%1$d&amp;database=attachments&amp;noborder=0&amp;sizex=%2$s
 	</string>
-	<string name="post" translatable="false">POST
-	</string>
-	<string name="cookie" translatable="false">Cookie
-	</string>
-	<string name="cw_cookie_full" translatable="false">cwbb_userid=%1$d; cwbb_password=%2$s
-	</string>
-	<string name="cw_cookie_userid" translatable="false">cwbb_userid
-	</string>
-	<string name="cw_cookie_pw" translatable="false">cwbb_password
-	</string>
-	<string name="cw_messageboard_mobile_url" translatable="false">http://www.consolewars.de/messageboard/?styleid=14
-	</string>
-	<string name="cw_posting_url" translatable="false">http://www.consolewars.de/gen/processtalkback.php
-	</string>
-	<string name="cw_blogpost_url" translatable="false">http://www.%1$s.consolewars.de/settings/writeeditblog.php
-	</string>
-	<string name="cw_getsecuritytoken_url" translatable="false">http://www.consolewars.de/messageboard/private.php?do=newpm
-	</string>
-	<string name="cw_message_url" translatable="false">http://www.consolewars.de/messageboard/private.php
-	</string>
+	<string name="post" translatable="false">POST</string>
+	<string name="cookie" translatable="false">Cookie</string>
+	<string name="cw_cookie_full" translatable="false">cwbb_userid=%1$d; cwbb_password=%2$s</string>
+	<string name="cw_cookie_userid" translatable="false">cwbb_userid</string>
+	<string name="cw_cookie_pw" translatable="false">cwbb_password</string>
+	<string name="cw_messageboard_mobile_url" translatable="false">http://www.consolewars.de/messageboard/?styleid=17</string>
+	<string name="cw_posting_url" translatable="false">http://www.consolewars.de/gen/processtalkback.php</string>
+	<string name="cw_blogpost_url" translatable="false">http://www.%1$s.consolewars.de/settings/writeeditblog.php</string>
+	<string name="cw_getsecuritytoken_url" translatable="false">http://www.consolewars.de/messageboard/private.php?do=newpm</string>
+	<string name="cw_message_url" translatable="false">http://www.consolewars.de/messageboard/private.php</string>
 	<string name="cw_login" translatable="false">
 		http://www.consolewars.de/messageboard/login.php?do=login&amp;cookieuser=1&amp;do=login&amp;s=&amp;vb_login_md5password=%1$s&amp;vb_login_md5password_utf=%1$s&amp;vb_login_password=&amp;vb_login_username=%2$s
 	</string>
